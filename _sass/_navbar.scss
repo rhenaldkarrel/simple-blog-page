@@ -7,11 +7,19 @@
     &:hover {
       border-bottom: 3px solid $red;
       color: $red;
+
+      @include until-widescreen {
+        border-bottom: 0;
+      }
     }
 
     &.is-active {
       border-bottom: 3px solid $red;
       color: $red;
+
+      @include until-widescreen {
+        border-bottom: 0;
+      }
     }
   }
 }

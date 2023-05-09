@@ -10329,9 +10329,19 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   border-bottom: 3px solid hsl(348deg, 86%, 61%);
   color: hsl(348deg, 86%, 61%);
 }
+@media screen and (max-width: 1215px) {
+  .navbar-menu .navbar-item:hover {
+    border-bottom: 0;
+  }
+}
 .navbar-menu .navbar-item.is-active {
   border-bottom: 3px solid hsl(348deg, 86%, 61%);
   color: hsl(348deg, 86%, 61%);
+}
+@media screen and (max-width: 1215px) {
+  .navbar-menu .navbar-item.is-active {
+    border-bottom: 0;
+  }
 }
 
 .navbar-brand {
