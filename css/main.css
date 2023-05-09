@@ -1,5 +1,8 @@
 @charset "UTF-8";
+/* Font */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap");
+/* Bulma Variables */
+/* Custom Variables */
 h1,
 h2,
 h3,
@@ -10,6 +13,7 @@ h6,
   font-family: "Montserrat", sans-serif;
 }
 
+/* Bulma */
 /*! bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 .pagination-previous,
@@ -5123,7 +5127,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 .navbar-link:hover,
 .navbar-link.is-active {
   background-color: hsl(0deg, 0%, 98%);
-  color: #19a9bc;
+  color: hsl(348deg, 86%, 61%);
 }
 
 .navbar-item {
@@ -10314,4 +10318,106 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .footer {
   background-color: hsl(0deg, 0%, 98%);
   padding: 3rem 1.5rem 6rem;
+}
+
+/* Navbar */
+.navbar-menu .navbar-item {
+  padding-inline: 0;
+  margin-inline: 0.75rem;
+}
+.navbar-menu .navbar-item:hover {
+  border-bottom: 3px solid hsl(348deg, 86%, 61%);
+}
+
+.navbar-brand {
+  align-items: center;
+}
+.navbar-brand .navbar-item {
+  width: 40px;
+  height: 40px;
+  background-color: hsl(348deg, 86%, 61%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: bold;
+  margin-inline: 0.75rem;
+}
+.navbar-brand .navbar-item:hover {
+  background-color: hsl(348deg, 86%, 61%) !important;
+  color: hsl(0deg, 0%, 100%);
+}
+
+/* Section Title */
+.section-title {
+  font-size: 5rem;
+}
+@media screen and (max-width: 1023px) {
+  .section-title {
+    font-size: 3rem;
+  }
+}
+
+/* Blog List */
+@media screen and (max-width: 1023px) {
+  .blog-list .columns .blog-card {
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* Blog Card */
+.blog-card {
+  cursor: pointer;
+  border-radius: 8px;
+}
+.blog-card .date {
+  margin-block: 0.5rem;
+  color: hsl(0deg, 0%, 71%);
+}
+.blog-card .thumbnail img {
+  border-radius: 8px;
+  aspect-ratio: 16/9;
+  width: 100%;
+  object-fit: cover;
+}
+.blog-card .information .title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.blog-card .information .subtitle {
+  font-size: 1rem;
+}
+.blog-card.is-highlighted {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.blog-card.is-highlighted .thumbnail {
+  flex-basis: 60%;
+}
+.blog-card.is-highlighted .information {
+  flex-basis: 40%;
+}
+.blog-card.is-highlighted .information .title {
+  font-size: 4.5rem;
+  margin-bottom: 2rem;
+}
+.blog-card.is-highlighted .information .subtitle {
+  font-size: 1.25rem;
+}
+@media screen and (max-width: 1215px) {
+  .blog-card.is-highlighted {
+    gap: 0;
+    align-items: normal;
+    flex-direction: column;
+  }
+  .blog-card.is-highlighted .information .title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1215px) {
+  .blog-card .information .title {
+    font-size: 1.5rem;
+  }
 }

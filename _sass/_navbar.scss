@@ -1,0 +1,32 @@
+/* Navbar */
+.navbar-menu {
+  .navbar-item {
+    padding-inline: 0;
+    margin-inline: 0.75rem;
+
+    &:hover {
+      border-bottom: 3px solid $red;
+    }
+  }
+}
+
+.navbar-brand {
+  align-items: center;
+
+  .navbar-item {
+    width: 40px;
+    height: 40px;
+    background-color: $red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    color: $white;
+    font-weight: bold;
+    margin-inline: 0.75rem;
+
+    &:hover {
+      background-color: $red !important;
+      color: $white;
+    }
+  }
+}
