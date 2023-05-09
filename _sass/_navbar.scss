@@ -6,6 +6,12 @@
 
     &:hover {
       border-bottom: 3px solid $red;
+      color: $red;
+    }
+
+    &.is-active {
+      border-bottom: 3px solid $red;
+      color: $red;
     }
   }
 }
