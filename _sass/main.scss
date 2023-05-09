@@ -1,29 +1,20 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap');
+@import '../node_modules/bulma/sass/utilities/initial-variables';
 
-// Customization
+$blue: #19a9bc;
+$family-sans-serif: 'Source Sans Pro', sans-serif;
+$family-heading: 'Montserrat', sans-serif;
+$primary: #f86e21;
 
-// You can easily customize Bulma with your own variables.
-// Just uncomment the following block to see the result.
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
+	font-family: $family-heading;
+}
 
-/*
-// 1. Import the initial variables
-@import "../node_modules/bulma/sass/utilities/initial-variables";
-
-// 2. Set your own initial variables
-// Update the blue shade, used for links
-$blue: #06bcef;
-// Add pink and its invert
-$pink: #ff8080;
-$pink-invert: #fff;
-// Update the sans-serif font family
-$family-sans-serif: "Helvetica", "Arial", sans-serif;
-
-// 3. Set the derived variables
-// Use the new pink as the primary color
-$primary: $pink;
-$primary-invert: $pink-invert;
-
-// 4. Import the rest of Bulma
-*/
-
-@import "../node_modules/bulma/bulma";
+@import '../node_modules/bulma/bulma';
